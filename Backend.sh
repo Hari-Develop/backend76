@@ -10,8 +10,14 @@ dnf install nodejs -y
 echo -e "\e[32m copying the service file \e[0m"
 cp backend.repo /etc/systemd/system/backend.service
 
+echo -e "\e[32m deleting the existing the user \e[0m"
+userdel -r expense
+
 echo -e "\e[32m adding the user \e[0m"
 useradd expense
+
+echo -e "\e[32m removing the directory \e[0m"
+rm -rf /app
 
 echo -e "\e[32m creating the app directory \e[0m"
 mkdir /app
