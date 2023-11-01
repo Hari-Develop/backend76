@@ -4,7 +4,7 @@ dnf module disable nodejs -y
 echo -e "\e[32m enabling the nodejs:18 \e[0m"
 dnf module enable nodejs:18 -y
 
-echo -e "\e[32m installing the ndejs \e[0m"
+echo -e "\e[32m installing the nodejs \e[0m"
 dnf install nodejs -y
 
 echo -e "\e[32m copying the service file \e[0m"
