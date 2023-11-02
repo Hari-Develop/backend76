@@ -8,7 +8,7 @@ echo -e "\e[32m installing the nodejs \e[0m"
 dnf install nodejs -y
 
 echo -e "\e[32m copying the service file \e[0m"
-cp backend.service /etc/systemd/system/backend.service
+cp backend.repo /etc/systemd/system/backend.service
 
 echo -e "\e[32m deleting the existing the user \e[0m"
 userdel -r expense
